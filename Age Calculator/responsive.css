@@ -1,0 +1,20 @@
+/* For devices with max-width 1200px */
+@media only screen and (max-width: 1200px) {
+    .app{
+        width: 50%;
+    }
+}
+
+/* For devices with max-width 800px */
+@media only screen and (max-width: 800px) {
+    .app{
+        width: 70%;
+    }
+}
+
+/* For devices with max-width 600px */
+@media only screen and (max-width: 600px) {
+    .app{
+        width: 80%;
+    }
+}

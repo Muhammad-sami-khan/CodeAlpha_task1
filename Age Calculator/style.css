@@ -1,0 +1,114 @@
+:root{
+    --bg-color: rgb(90, 90, 162);
+    --text-color: rgb(7, 7, 7);
+    --shadow: 0 1px 3px rgba(20, 18, 18, 0.8);
+    --secondbg: rgb(240, 87, 11);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+body{
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    width: 25%;
+    height: 100vh;
+     /* position: fixed; */
+    /* left: 40%; */
+}
+.title{
+    font-size: 2rem;
+    color: var(--bg-color);
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.main-container{
+    height: 50vh;
+    background-color: var(--bg-color);
+    position: relative;
+    top:15vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#new-age-form{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px;
+    position: relative;
+    top: 1rem;
+}
+.birth-date input{
+    padding-right: 1rem;
+    margin-right: 5px;
+}
+.birth-date input[type="text"]{
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: #cdcbd4;
+    padding: .5rem 2rem .7rem 0;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2px;
+    
+}
+.calculate-btn{
+    padding:9px 5px 12px 4px;
+    border-radius: 3px;
+    background-color: var(--bg-color);
+    border: none;
+    position: fixed;
+    margin-left:2px;
+}
+.result{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+#years,#months,#days{
+    height: 5rem;
+    width: 6rem;
+    border-radius: 9px 9px 0 0 ;
+    border:none;
+}
+.result input[value]{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 10px;
+    color: rgb(12, 12, 12);
+}
+.input-group label{
+    position: relative;
+    top: 2px;
+    left: 12px;
+    display: block;
+    width: 80%; /* Set the width to 100% */
+    background-color:var(--secondbg);
+    box-shadow: var(--shadow);
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 0 0 2px 2px;
+    border: none;
+    padding:5px 0 5px 0;
+    text-align: center;
+}
+
+.msg{
+    text-align: center;
+}
+
+

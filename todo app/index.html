@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list application </title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <h3 class="todo-title">Create a Todo</h3>
+    <!-- main container started here -->
+    <main class="app">
+        <!-- create todo section -->
+        <section class="create-todo">
+
+            <!-- todo form -->
+            <form id="new-todo-form">
+                <h4>what's on your todo list</h4>
+                <input
+                  type="text"
+                  id="content"
+                  name="content" 
+                  value="giong to gym"
+                  placeholder="eg, make a vedio">
+                <h3>pick a catagory</h3>
+                <div class="options">
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="catagory" 
+                        id="catagory1" 
+                        value="Business">
+                        <span class="bubble business"></span>
+                        <div>Business</div>
+                        
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="catagory" 
+                        id="catagory2" 
+                        value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="catagory" 
+                        id="catagory3" 
+                        value="education">
+                        <span class="bubble education"></span>
+                        <div>Education</div>
+
+                    </label>
+
+
+                </div>
+                <input id="add-todo" type="submit" value="Add todo">
+            </form>
+        
+        </section>
+        <section class="todo-list">
+
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+
+                <!-- i was created this class for giving some styling that how my todo will be look like -->
+              <!-- i comment because there is no need now i have created in javascript and if the user will be click on submit button
+              the items will be created automatically -->
+              
+             
+               <!--
+                <div class="todo-items">
+                    <label>
+                        <input type="checkbox" class="bubble personal">
+                        <span class="bubble personal"></span>
+                        
+                        <div class="todo-content">
+                            <input type="text" value="make a vedio" readOnly>
+                        </div>
+                        <div id="edit-delete-btn">
+                            <button class="edit"><i class="fa-solid fa-pen-to-square" style="color:var(--light);"></i></button>
+                            <button class="delete"><i class="fa-solid fa-trash" style="color: var(--light)"></i></button>
+                        </div>
+                    </label>
+
+                </div> -->
+                <button id="clear-all">Clear All</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

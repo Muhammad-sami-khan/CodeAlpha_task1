@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+ <main class="app">
+     <h2 class="title">Age Calculator</h2><br>
+    <div class="main-container">
+    <form id="new-age-form">
+        <section class="birth-date">
+           
+            <input type="text"
+                id="birthday"
+                placeholder=" Enter your Birth date here"
+                >
+        
+                <button class="calculate-btn">Calculate</button>
+        </section>
+    </form>
+        <section class="result">
+
+                <div class="input-group">
+                <input type="number" id="years" value="00" readonly >
+                <label for="years">Years</label>
+                </div>
+
+                <div class="input-group">
+                <input type="number" id="months" value="00" readonly>
+                <label for="months">Months</label>
+                </div>
+
+                <div class="input-group">
+                <input type="number" id="days" value="00" readonly>
+                <label for="days">Days</label>
+                </div>
+        </section>
+        <section class="message">
+            <div class="msg"></div>
+        </section>
+
+    </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
